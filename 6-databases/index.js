@@ -1,3 +1,8 @@
+// Prisma Commands
+// npx prisma init : to create prisma folder and initialize prisma
+// npx prisma studio: to open prisma studio and visualize the database
+// npx prisma db push: to push the schema to the database or any changes to the schema
+
 import express from "express";
 import { PrismaClient } from "@prisma/client";
 import morgan from "morgan";
@@ -54,8 +59,3 @@ app.get("/user", async (req, res) => {
 app.listen(8000, () => {
   console.log("Server running on http://localhost:8000 🎉 🚀");
 });
-
-// Prisma Commands
-// npx prisma init : to create prisma folder and initialize prisma
-// npx prisma studio: to open prisma studio and visualize the database
-// npx prisma db push: to push the schema to the database or any changes to the schema

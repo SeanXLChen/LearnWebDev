@@ -1,6 +1,9 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
+
+// migrate the schema with `npx prisma migrate dev --name init`
+// learn more about it in the docs: https://www.prisma.io/docs/orm/prisma-migrate/getting-started
 generator client {
   provider = "prisma-client-js"
 }
@@ -11,13 +14,15 @@ datasource db {
 }
 
 model TodoItem {
-  id        Int  @id @default(autoincrement())
+  id        Int  @id @default(autoincrement()) // @id marks the field as the primary key
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   title     String   @db.VarChar(255)
   completed Boolean  @default(false)
-  author    User     @relation(fields: [authorId], references: [id])
   authorId  Int
+  author    User     @relation(fields: [authorId], references: [id]) // tell Prisma TodoItem.authorId is a foreign key to User.id
+
+  @@index(authorId) // adds an index for the authorId field
 }
 
 model User {
