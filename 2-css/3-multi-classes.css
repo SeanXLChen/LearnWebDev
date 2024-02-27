@@ -1,0 +1,26 @@
+/* Existing Rules with added comments */
+
+/* Single Class Selector: Targets elements with the class .class-a */
+.class-a {
+  height: 100px;
+  width: 100px;
+  background-color: yellowgreen;
+}
+
+/* Single Class Selector: Targets elements with the class .class-b */
+.class-b {
+  background-color: mediumpurple;
+}
+
+/* Combined Class Selector: Targets elements that have both .class-a and .class-b classes.
+   This demonstrates how specificity can increase with multiple classes.
+*/
+/* class-a AND class-b */
+.class-a.class-b {
+  border-radius: 25px;
+}
+
+/* class-a OR class-b */
+/* .class-a, .class-b {
+  background-color: peru;
+} */

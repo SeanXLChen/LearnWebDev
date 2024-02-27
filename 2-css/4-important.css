@@ -1,0 +1,19 @@
+/* The !important declaration in CSS is a way to make a specific style rule take precedence over other potentially conflicting rules.
+   However, its use is generally discouraged for several reasons:
+   1. It breaks the natural cascade in CSS, making it harder to predict which styles will be applied.
+   2. It can make debugging more challenging, as it's not immediately clear why certain styles aren't being applied.
+   3. Over-reliance on !important can lead to a maintenance nightmare, especially in larger projects.
+   4. It can make the CSS less reusable, as it forces a specific style regardless of the context.
+*/
+
+.class-a {
+  height: 100px;
+  width: 100px;
+  background-color: mediumpurple; /* This rule will be overridden by the next rule's !important declaration */
+}
+
+div {
+  height: 200px;
+  width: 200px;
+  background-color: peru !important; /* The !important declaration ensures this style will take precedence */
+}

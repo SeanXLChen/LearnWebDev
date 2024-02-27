@@ -1,0 +1,161 @@
+/* The wrapper styles the buttons' container for visual organization. */
+.wrapper {
+  display: flex;         /* Display buttons in a line */
+  justify-content: space-evenly; /* Distribute buttons evenly */
+}
+
+/* Base button styles */
+.btn {
+  display: inline-block; /* Allows the button to respect padding and margin */
+  font-weight: 400;      /* Regular font weight */
+  line-height: 1.5;      /* Spacing between lines of text */
+  color: #212529;        /* Text color */
+  text-align: center;    /* Centers the text inside the button */
+  text-decoration: none; /* Removes any underlines (useful if converted to a link) */
+  vertical-align: middle;/* Aligns the button with surrounding text */
+  cursor: pointer;       /* Changes cursor to pointer on hover, indicating clickability */
+  user-select: none;     /* Prevents the user from selecting the button text */
+  background-color: transparent; /* Default transparent background */
+  border: 1px solid transparent; /* Transparent border */
+  padding: 0.375rem 0.75rem;    /* Padding around text */
+  font-size: 1rem;       /* Text size */
+  border-radius: 0.25rem;/* Rounded corners */
+}
+
+/* Individual button styles define the look and feel for different purposes (primary action, secondary action, success, danger, warning) */
+
+/* Primary button - typically indicates the main action */
+.btn-primary {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #28579e97;
+}
+
+/* Secondary button - indicates a secondary action */
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+/* Success button - indicates a successful or positive action */
+.btn-success {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754;
+}
+
+/* Danger button - indicates a dangerous or negative action */
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+/* Warning button - indicates a cautionary action or note */
+.btn-warning {
+  color: #000;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+/* The states (hover, focus, active) provide visual feedback to the user during interactions. 
+   It's crucial for user experience to indicate interactivity and feedback.
+*/
+
+/* Primary button states */
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.btn-primary:focus {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5); /* Outline effect for accessibility */
+}
+
+.btn-primary:active {
+  background-color: #339fff;
+  border-color: #058aff;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #5c636a;
+  border-color: #565e64;
+}
+
+.btn-secondary:focus {
+  color: #fff;
+  background-color: #5c636a;
+  border-color: #565e64;
+  box-shadow: 0 0 0 0.25rem rgba(130, 138, 145, 0.5);
+}
+
+.btn-secondary:active {
+  background-color: #565e64;
+  border-color: #51585e;
+}
+
+/* =============================== */
+
+.btn-success:hover {
+  color: #fff;
+  background-color: #157347;
+  border-color: #146c43;
+}
+
+.btn-success:focus {
+  color: #fff;
+  background-color: #157347;
+  border-color: #146c43;
+  box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
+}
+
+.btn-success:active {
+  background-color: #146c43;
+  border-color: #13653f;
+}
+
+/* =============================== */
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #bb2d3b;
+  border-color: #b02a37;
+}
+
+.btn-danger:focus {
+  color: #fff;
+  background-color: #bb2d3b;
+  border-color: #b02a37;
+  box-shadow: 0 0 0 0.25rem rgba(225, 83, 97, 0.5);
+}
+
+.btn-danger:active {
+  background-color: #b02a37;
+  border-color: #a52834;
+}
+
+/* =============================== */
+
+.btn-warning:hover {
+  color: #000;
+  background-color: #ffca2c;
+  border-color: #ffc720;
+}
+
+.btn-warning:focus {
+  color: #000;
+  background-color: #ffca2c;
+  border-color: #ffc720;
+  box-shadow: 0 0 0 0.25rem rgba(217, 164, 6, 0.5);
+}
+
+.btn-warning:active {
+  background-color: #ffcd39;
+  border-color: #ffc720;
+}
+
+/* =============================== */

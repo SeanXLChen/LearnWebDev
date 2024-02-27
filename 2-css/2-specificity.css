@@ -1,0 +1,24 @@
+/* Specificity in CSS determines which styles are applied based on the "weight" or "specificity" of a selector.
+   Specificity values are calculated based on the type of selector used.
+   Here's a basic breakdown:
+   - ID selectors have a specificity value of 100.
+   - Class selectors have a specificity value of 10.
+   - Element selectors have a specificity value of 1.
+   
+   When multiple rules target the same element, the one with the highest specificity value will be applied.
+*/
+
+/* ID Selector - Specificity value: 100 */
+#paragraph-id {
+  color: green; /* This rule will be applied since it has the highest specificity */
+}
+
+/* Class Selector - Specificity value: 10 */
+.class-a {
+  color: red; /* This rule will be overridden by the ID selector above */
+}
+
+/* Element Selector - Specificity value: 1 */
+p {
+  color: blue; /* This rule will be overridden by both the class and ID selectors above */
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Selectors</title>
+    <link rel="stylesheet" type="text/css" href="4-advanced-selectors.css" />
+  </head>
+  <body>
+    <!-- For Adjacent or next sibling combinator (+) example -->
+    <div class="class-a">
+      Element with .class-a (Check the next element's border)
+    </div>
+    <div class="class-b">
+      Element with .class-b (Has a black border if adjacent combinator works)
+    </div>
+
+    <br />
+    <br />
+
+    <!-- For Child combinator (>) example -->
+    <div class="parent">
+      Element with .parent class (Check the child's border)
+      <div class="class-a">
+        Direct child with .class-a (Has a dotted red border if child combinator
+        works)
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <!-- For General or subsequent sibling combinator (~) example -->
+    <div class="class-a">
+      Element with .class-a (Check the shadow on any subsequent .class-b
+      elements)
+    </div>
+    <div>Some unrelated content</div>
+    <div class="class-b">
+      Element with .class-b (Has a gray shadow if general sibling combinator
+      works)
+    </div>
+
+    <br />
+    <br />
+
+    <!-- For Descendant combinator ( ) example -->
+    <div class="outer">
+      Element with .outer class (Check the scale of any nested .class-a element)
+      <div>
+        Some nesting...
+        <div class="class-a">
+          Nested element with .class-a (Is slightly scaled up if descendant
+          combinator works)
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <!-- More resources regarding this topic: -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors -->
+  </body>
+</html>

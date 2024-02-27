@@ -1,0 +1,58 @@
+/* Default styles for the divs to visualize them */
+.position-class-1, .position-class-2 {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #1f618d;
+}
+
+/* Static positioning (default) */
+.position-class-1 {
+  background-color: mediumpurple;
+  /* position: static; is the default value and doesn't need to be explicitly set */
+}
+
+/* Relative positioning allows you to position an element relative to its normal position in the flow. */
+.position-class-2 {
+  background-color: rgb(71, 117, 37);
+  position: relative;
+  top: 40px;  
+  /* Move the element 40px down from its original position */
+  left: 40px; 
+  /* Move the element 40px right from its original position */
+}
+
+/* Absolute positioning positions an element relative to its closest positioned ancestor or the initial containing block. Uncomment to see it in action. */
+
+.position-class-2 {
+  background-color: #f39c12;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+
+/* Fixed positioning positions an element relative to the browser window. Uncomment to see it in action. */
+
+.position-class-2 {
+  background-color: #e74c3c;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+}
+
+
+/* Sticky positioning is a hybrid of relative and fixed positioning. Uncomment to see it in action. */
+
+.position-class-2 {
+  background-color: #9b59b6;
+  position: sticky;
+  top: 40px; 
+}
+
+/* Will be "stuck" when 40px from the top of the viewport */
+
+/* 
+   Each position value has specific use cases and understanding them is crucial for effective layout design.
+   More resources:
+   - https://developer.mozilla.org/en-US/docs/Web/CSS/position
+*/

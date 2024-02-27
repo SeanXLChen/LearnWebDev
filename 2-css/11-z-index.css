@@ -1,0 +1,47 @@
+/* The z-index property in CSS specifies the stack order of positioned elements. 
+   An element with greater stack order is always in front of another element with a lower stack order.
+   However, z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky).
+*/
+
+/* This div is positioned relative with a z-index of 3 (highest in this example). It will appear on top when z-index is uncommented. */
+.relative-class-1 {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  position: relative;
+  top: 10px;
+  left: 5px;
+  /* z-index: 3;   */
+  /* Uncomment to see its effect */
+}
+
+/* This div is positioned relative with a z-index of 2. It will appear below .relative-class-1 and above .relative-class-3 when z-index is uncommented. */
+.relative-class-2 {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  position: relative;
+  top: -100px;
+  left: 50px;
+  /* z-index: 2;  */
+  /* Uncomment to see its effect */
+}
+
+/* This div is positioned relative with a z-index of 1 (lowest in this example). It will appear at the bottom when z-index is uncommented. */
+.relative-class-3 {
+  height: 100px;
+  width: 100px;
+  background-color: magenta;
+  position: relative;
+  top: -250px;
+  left: 90px;
+  /* z-index: 1;  */
+  /* Uncomment to see its effect */
+}
+
+/* 
+   It's important to note that z-index can lead to complex stacking contexts, especially when used within nested positioned elements.
+   More resources:
+   - https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+   - https://css-tricks.com/almanac/properties/z/z-index/
+*/

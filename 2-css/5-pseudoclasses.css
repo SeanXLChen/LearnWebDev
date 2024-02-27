@@ -1,0 +1,49 @@
+/* Rule targeting the .class-a div, setting basic styles */
+.class-a {
+  height: 100px;
+  width: 100px;
+  background-color: mediumpurple;
+}
+
+/* Hover Pseudoclass: Targets the .class-a div when hovered over.
+   This allows for interaction-based styling.
+*/
+.class-a:hover {
+  height: 200px;
+  width: 200px;
+  background-color: peru;
+}
+
+/* Basic styling for list items with the class .li-item-class */
+.li-item-class {
+  color: darkred;
+}
+
+/* :first-child Pseudoclass: Targets the first child element of a parent.
+   Here, it targets the first list item in the unordered list.
+*/
+.li-item-class:first-child {
+  color: fuchsia;
+}
+
+/* :last-child Pseudoclass: Targets the last child element of a parent.
+   Here, it targets the last list item in the unordered list.
+*/
+.li-item-class:last-child {
+  color: red;
+}
+
+/* :nth-child Pseudoclass: Targets child elements based on their position in the parent.
+   Here, it targets the fourth list item in the unordered list.
+*/
+.li-item-class:nth-child(4) {
+  color: rgb(37, 156, 169);
+}
+
+/* 
+   Pseudoclasses provide a powerful way to target elements based on their state or position.
+   They allow for more dynamic and responsive styling.
+   More resources:
+   - https://css-tricks.com/pseudo-class-selectors/
+   - https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+*/

@@ -1,0 +1,63 @@
+/* Setting a global font for better visualization */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ensuring that the body and the flex container take up the full height of the viewport */
+html,
+body,
+.flex-wrapper {
+  height: 100%;
+}
+
+/* The .flex-wrapper is our flex container. Elements within it will become flex items. */
+.flex-wrapper {
+  display: flex; /* This initiates the flex layout model */
+  gap: 10px; /* Provides spacing between flex items */
+
+  /* flex-direction determines the primary axis of the layout. It can be row (horizontal) or column (vertical). */
+  /* Uncomment to see horizontal layout */
+  /* flex-direction: row;  */
+  /* flex-direction: column; */
+   /* Uncomment to see vertical layout */
+
+  /* flex-wrap allows the items to wrap onto multiple lines or be forced onto a single line. */
+  /* flex-wrap: wrap; */
+   /* Uncomment to make items wrap if there's not enough space */
+
+  /* justify-content aligns items along the primary axis (horizontal for row, vertical for column). */
+  /* justify-content: center;  */
+  /* Uncomment to center items horizontally */
+  /* justify-content: space-between;  */
+  /* Uncomment to distribute items evenly with space between them */
+
+  /* align-items aligns items along the cross axis (vertical for row, horizontal for column). */
+  /* align-items: center;  */
+  /* Uncomment to center items vertically */
+  /* align-items: flex-start; Uncomment to align items to the start of the container */
+  /* align-items: flex-end;  */
+  /* Uncomment to align items to the end of the container */
+}
+
+/* Styling the flex items for better visualization */
+.flex-item {
+  height: 100px;
+  width: 100px;
+  background-color: #2e86c1;
+  border: 1px solid #1f618d;
+  font-size: 30px;
+  color: #fff;
+
+  /* Uncomment the below lines to center the content (number) within each flex item */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+   Flexbox is a powerful layout model in CSS. With a combination of flex container and flex item properties, 
+   you can create complex layouts with ease.
+   More resources:
+   - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+   - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+*/

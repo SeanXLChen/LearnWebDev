@@ -1,0 +1,43 @@
+
+/* Setting a global font for better visualization */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* The .grid-wrapper is our grid container. Elements within it will become grid items. */
+.grid-wrapper {
+  display: grid; /* This initiates the grid layout model */
+  gap: 10px; /* Provides spacing between grid items */
+  
+  /* grid-template-columns and grid-template-rows define the size of the columns and rows in the grid. */
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal size */
+  grid-template-rows: repeat(2, 150px); /* Creates 2 rows of 150px each */
+  
+  /* Additional grid properties can be explored and uncommented for demonstration */
+  /* grid-template-areas: 
+    "header header header"
+    "main main sidebar"
+    "footer footer footer";
+  */
+}
+
+/* Styling the grid items for better visualization */
+.grid-item {
+  background-color: #2E86C1;
+  border: 1px solid #1F618D;
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+   CSS Grid is an incredibly versatile layout model. It allows for precise placement of items within rows and columns, 
+   and is particularly useful for creating complex web layouts.
+   More resources:
+   - https://css-tricks.com/snippets/css/complete-guide-grid/
+   - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+*/
+

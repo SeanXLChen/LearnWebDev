@@ -1,0 +1,41 @@
+/* The display property in CSS determines the layout behavior of an element. 
+   It's a fundamental concept in web design and affects how elements interact with each other on the page.
+*/
+
+/* 'block' elements take up the full width of their container, causing a line break before and after them. */
+.div-class {
+  height: 100px;
+  width: 100px;
+  background-color: mediumpurple;
+  border: 1px solid #1f618d;
+  /* By default, divs are display: block; */
+
+  /* Uncommenting the below lines will change the display behavior of the div */
+  /* display: inline; makes the div behave like an inline element, ignoring width and height */
+  /* display: inline-block; makes the div behave like a block element, but inline with other content */
+}
+
+/* 'inline' elements only take up as much width as necessary and do not respect set heights and widths. */
+.a-class {
+  background-color: gold;
+  /* height and width are ignored for display: inline; */
+
+  /* Uncommenting the below line will make the anchor respect width, height, and padding while remaining inline */
+  /* display: inline-block; */
+}
+
+/* 'inline-block' elements are like block elements, but they do not force a new line after the element. */
+.button-class {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  /* By default, buttons are display: inline-block; */
+}
+
+/* 
+   The display property is versatile and has several other values, 
+   including 'flex', 'grid', and 'none', each with its specific use cases.
+   More resources:
+   - https://developer.mozilla.org/en-US/docs/Web/CSS/display
+   - https://css-tricks.com/almanac/properties/d/display/
+*/

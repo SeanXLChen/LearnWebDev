@@ -1,0 +1,30 @@
+/* The box model in CSS describes how space is distributed around and between elements.
+   It consists of several properties: margin, border, padding, and the actual content.
+   - Margin: Space outside the border, pushing other elements away.
+   - Border: A visible line around the content and padding.
+   - Padding: Space between the content and the border.
+   - Content: The actual visible content, like text or an image.
+*/
+
+.box-model-class {
+  height: 200px; /* Height of the content box */
+  width: 200px; /* Width of the content box */
+  border: 3px solid red; /* Border surrounding the content and padding */
+  padding: 25px; /* Space between the content and the border */
+  margin: 25px; /* Space outside the border */
+  background-color: #2e86c1; /* Background color of the content box (extends beneath padding if padding exists) */
+}
+
+/* The box-sizing property with the value of 'border-box' ensures that padding and border are included within the element's total width and height. 
+   This makes layout calculations more predictable, especially when adding padding and borders.
+*/
+* {
+  box-sizing: border-box;
+}
+
+/* 
+   Understanding the box model is crucial when designing layouts, as it helps in predicting how elements will interact in the browser.
+   More resources:
+   - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model 
+   - https://web.dev/learn/css/box-model/
+*/

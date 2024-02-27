@@ -1,0 +1,21 @@
+/* Advanced Selector Examples */
+
+/* Adjacent or next sibling combinator (+) */
+.class-a + .class-b {
+  border: 2px solid black;
+}
+
+/* Child combinator (>) */
+.parent > .class-a {
+  border: 3px dotted red;
+}
+
+/* General or subsequent sibling combinator (~) */
+.class-a ~ .class-b {
+  box-shadow: 5px 5px 10px gray;
+}
+
+/* Descendant combinator ( ) */
+.outer .class-a {
+  transform: scale(1.1);
+}

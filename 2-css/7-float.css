@@ -1,0 +1,19 @@
+/* The float property in CSS is used to place an element to the left or right of its container, allowing other content to wrap around it.
+   It's commonly used for layouts and to wrap text around images.
+   However, it's worth noting that modern layout techniques like Flexbox and Grid have provided more flexible and powerful tools for building layouts without relying on float.
+*/
+
+.float-class div {
+  height: 100px;
+  width: 100px;
+  background-color: #2e86c1;
+  border: 1px solid #1F618D;
+
+  float: right; /* This will make each div float to the left, causing them to be arranged horizontally */
+}
+
+/* 
+   Remember to clear floats after using them to prevent layout issues.
+   More resources:
+   - https://css-tricks.com/all-about-floats/
+*/
