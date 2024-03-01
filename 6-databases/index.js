@@ -34,7 +34,7 @@ app.post("/todo", async (req, res) => {
   const todoItem = await prisma.todoItem.create({
     data: {
       title,
-      author: { connect: { email: authorEmail } },
+      author: { connect: { email: authorEmail } }, // link this record with record in User table with matching email value 
     },
   });
   res.json(todoItem);
@@ -54,7 +54,7 @@ app.post("/user", async (req, res) => {
 app.get("/user", async (req, res) => {
   const users = await prisma.user.findMany({});
   res.json(users);
-});
+}); 
 
 app.listen(8000, () => {
   console.log("Server running on http://localhost:8000 🎉 🚀");
