@@ -24,19 +24,19 @@ faces.forEach((face) => {
 // Adding Elements to an Array
 // push adds elements to the end, unshift adds elements to the beginning.
 console.log("4 ========== ========== =========");
-faces.push("😬");
+faces.push("😬");  // push append item at the end of the array
 console.log(faces); // "😬" is added to the end of the array.
 console.log("5 ========== ========== =========");
-faces.unshift("🥶");
+faces.unshift("🥶"); // unshift add item at the beginning of the array
 console.log(faces); // "🥶" is added to the beginning of the array.
 
 // Removing Elements from an Array
 // pop removes the last element, shift removes the first element.
 console.log("6 ========== ========== =========");
-const lastFace = faces.pop();
+const lastFace = faces.pop();  // pop removes the last element and returns it.
 console.log(faces); // "😬" is removed from the array.
 console.log("7 ========== ========== =========");
-const firstFace = faces.shift();
+const firstFace = faces.shift();  // shift removes the first element and returns it.
 console.log(faces); // "🥶" is removed from the array.
 
 // Finding the Index of an Element in the Array
