@@ -11,7 +11,7 @@ export default function App() {
     <div className="app">
       <GeoForm setLatLng={setLatLng} />
 
-      {latLng && <WeatherChart latLng={latLng} />} /* conditional rendering */
+      {latLng && <WeatherChart latLng={latLng} />} 
     </div>
   );
 }
