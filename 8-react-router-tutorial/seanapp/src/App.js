@@ -8,7 +8,7 @@ import About from './About';
 import Missing from './Missing';
 import {
   Route,
-  Switch,
+  Routes,
   useHistory
 } from 'react-router-dom';
 import {
@@ -21,6 +21,13 @@ function App() {
     <div className="App">
       <Header />
       <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/post" element={<NewPost />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/:id" element={<PostPage />} />
+        <Route path="*" element={<Missing />} />
+      </Routes>
       <Footer />
     </div>
   );
