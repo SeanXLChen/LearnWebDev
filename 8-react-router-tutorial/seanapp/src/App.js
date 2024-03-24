@@ -21,11 +21,12 @@ function App() {
     <div className="App">
       <Header />
       <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
+      {/* Routes is a component that renders different components based on the URL path */}
+      <Routes> 
         <Route path="/post" element={<NewPost />} />
         <Route path="/about" element={<About />} />
         <Route path="/:id" element={<PostPage />} />
+        <Route path="/" element={<Home />} />
         <Route path="*" element={<Missing />} />
       </Routes>
       <Footer />
