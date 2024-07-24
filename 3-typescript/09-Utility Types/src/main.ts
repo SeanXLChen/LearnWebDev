@@ -1,0 +1,5 @@
+// Utility Types
+
+// Partial
+
+interface 
